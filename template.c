@@ -7,9 +7,9 @@
 |____/\___/ \__,_|_| |_\__,_|\__, |_|  \___/ \__,_|_| |_|\__,_|____\__,_|_.__/ 
                              |___/                                             
 *******************************************************************************
-* Autor:    Benjamin Hedert                                     Oktober 2020  *
+* Autor:    <Autor>                                             Oktober 2020  *
 * Version:  0.01                                                              *
-* Module:   change_lr                                                         *
+* Module:   <modulname>                                                       *
 ******************************************************************************/
 
 #include <stdio.h>
@@ -17,9 +17,7 @@
 
 void stereosample(unsigned long sample, short *left,short *right)
 {
-   short temp = *left;
-   *left = *right;
-   *right = temp;
+   //Here you can change *left and *right
 }
 
 int main()

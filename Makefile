@@ -10,7 +10,7 @@ waveout: waveout.c
 	gcc waveout.c -o waveout
 
 change_lr: change_lr.c
-	gcc change_lr.c -o change_lr
+	gcc change_lr.c soundgroundlab.c -o change_lr
 
 invert: invert.c
 	gcc invert.c -o invert

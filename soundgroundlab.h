@@ -9,22 +9,9 @@
 *******************************************************************************
 * Autor:    Benjamin Hedert                                     Oktober 2020  *
 * Version:  0.01                                                              *
-* Module:   change_lr                                                         *
+* Module:   soundgroundlab.h                                                  *
 ******************************************************************************/
 
 #include <stdio.h>
-#include "soundgroundlab.h"
 
-void stereosample(unsigned long sample, short *left,short *right)
-{
-   short temp = *left;
-   *left = *right;
-   *right = temp;
-}
-
-int main()
-{
-   sgl_stereosample_processing(stereosample);
-
-   return 0;
-}
+void sgl_stereosample_processing(void (*stereosample_func) (unsigned long,short*,short*));
